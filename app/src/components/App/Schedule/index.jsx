@@ -30,6 +30,7 @@ class Schedule extends Component {
         memberId: m.member_id,
         sequence: m.sequence,
         firstName: m.first_name,
+        lastName: m.last_name,
         lastServedDate: m.date,
         lastRoleId: m.role_id,
         lastRoleName: m.role_name,
@@ -74,6 +75,15 @@ class Schedule extends Component {
         <Link to='/editvolunteer'><button id='editScheduleBtn'>Edit</button></Link>
         <h1 className={styles.title}>Volunteer Schedule for [date] </h1>
         {/* <ScheduleRow /> */}
+        <div className={styles.row}>
+          <div className={styles.memberDetail}>id</div>
+          <div className={styles.memberDetail}>seq</div>
+          <div className={styles.memberDetail}>first</div>
+          <div className={styles.memberDetail}>last</div>
+          <div className={styles.memberDetail}>lServeDate</div>
+          <div className={styles.memberDetail}>lRoleId</div>
+          <div className={styles.memberDetail}>lRoleName</div>
+        </div>
         {renderList}
       </div>
     )

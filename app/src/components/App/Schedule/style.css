@@ -6,3 +6,12 @@
   width: 100%;
 
 }
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.memberDetail {
+  /*margin-left: 25px;*/
+  flex-grow: 10;
+}
